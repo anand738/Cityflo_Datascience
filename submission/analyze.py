@@ -353,7 +353,7 @@ def main() -> None:
     parser.add_argument(
         "--data-dir",
         type=Path,
-        default=Path(__file__).parent / "data",
+        default=Path(__file__).resolve().parent.parent / "data",
     )
     args = parser.parse_args()
 
